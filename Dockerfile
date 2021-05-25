@@ -28,7 +28,6 @@ RUN unzip trino-db2-$TRINO_VERSION.zip && rm -f trino-db2-$TRINO_VERSION.zip
 RUN wget -c https://github.com/apreethi13/trino-event-stream/releases/download/${TRINO_VERSION}/trino-event-stream-${TRINO_VERSION}.zip
 RUN unzip trino-event-stream-${TRINO_VERSION}.zip && rm -f trino-event-stream-${TRINO_VERSION}.zip
 
-
 # Consume historial image from Trino
 FROM trinodb/trino:$TRINO_VERSION
 
