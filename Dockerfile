@@ -25,11 +25,9 @@ RUN unzip trino-db2-$TRINO_VERSION.zip && rm -f trino-db2-$TRINO_VERSION.zip
 # RUN wget -c https://github.com/IBM/trino-event-stream/releases/download/${TRINO_VERSION}/trino-event-stream-${TRINO_VERSION}.zip
 # RUN unzip trino-event-stream-${TRINO_VERSION}.zip && rm -f trino-event-stream-${TRINO_VERSION}.zip
 
-RUN wget -c https://github.com/apreethi13/trino-event-stream/releases/download/356/trino-event-stream-356.zip
-RUN unzip trino-event-stream-356.zip && rm -f trino-event-stream-356.zip
+RUN wget -c https://github.com/apreethi13/trino-event-stream/releases/download/${TRINO_VERSION}/trino-event-stream-${TRINO_VERSION}.zip
+RUN unzip trino-event-stream-${TRINO_VERSION}.zip && rm -f trino-event-stream-${TRINO_VERSION}.zip
 
-RUN wget -c http://packages.confluent.io/archive/6.1/confluent-community-6.1.1.zip
-RUN unzip http://packages.confluent.io/archive/6.1/confluent-community-6.1.1.zip && rm -f http://packages.confluent.io/archive/6.1/confluent-community-6.1.1.zip
 
 RUN wget -c https://github.com/confluentinc/examples
 
